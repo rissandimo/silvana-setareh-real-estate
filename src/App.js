@@ -1,9 +1,13 @@
 import './App.css';
+import About from './components/about/About';
 
 function App() {
   return (
     <div className="app">
-        app page
+    <div className="topSection">
+        <About />
+
+    </div>
     </div>
   );
 }
