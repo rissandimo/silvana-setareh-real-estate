@@ -10,8 +10,10 @@ const About = () => (
                 <h2>Silvana Setareh</h2>
             <p>DRE# 123456</p>
             <div className="about__location">
+                <div className="about__address">
                 <span>202 N. Canon Dr. Beverly Hills, CA</span>
                  <button>View My Profile</button>
+                </div>
                  <p>Cell: 310 666 4744</p>
                  <p>Email: silvana.setareh@gmail.com</p>
             </div>

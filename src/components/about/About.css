@@ -2,4 +2,23 @@
     background-color: white;
     border-radius: 10px;
     padding: 20px;
+    display: flex;
+    flex: 2;
+}
+
+.about__info{
+    padding: 10px 25px;
+}
+
+.about__info > .about__location{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px;
+}
+
+.about__location > .about__address{
+    display: flex;
+    justify-content: space-around;
+    width: 380px;
 }

@@ -1,0 +1,10 @@
+.contact{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 20px;
+    padding: 20px;
+    width: 400px;
+}
