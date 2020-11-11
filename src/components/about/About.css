@@ -1,13 +1,20 @@
 .about{
     background-color: white;
+    /* border: 1px solid; */
     border-radius: 10px;
     padding: 20px;
     display: flex;
-    flex: 2;
+    width: 920px;
 }
 
 .about__info{
+    margin-left: 70px;
     padding: 10px 25px;
+}
+
+.about__info > h1{
+    font-weight: 400;
+    margin-bottom: 5px;
 }
 
 .about__info > .about__location{
@@ -18,7 +25,11 @@
 }
 
 .about__location > .about__address{
+    align-items: center;
     display: flex;
-    justify-content: space-around;
-    width: 380px;
+    width: 500px;
+}
+
+.about__address > button{
+    margin-left: 100px;
 }

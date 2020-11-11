@@ -7,12 +7,12 @@ const About = () => (
     <div className="about">
         <img src={profilePic} alt=""/>
         <div className="about__info">
-                <h2>Silvana Setareh</h2>
+                <h1>Silvana Setareh</h1>
             <p>DRE# 123456</p>
             <div className="about__location">
                 <div className="about__address">
                 <span>202 N. Canon Dr. Beverly Hills, CA</span>
-                 <button>View My Profile</button>
+                 <button className='button'>View My Profile</button>
                 </div>
                  <p>Cell: 310 666 4744</p>
                  <p>Email: silvana.setareh@gmail.com</p>
