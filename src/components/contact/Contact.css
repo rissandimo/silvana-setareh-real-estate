@@ -6,15 +6,41 @@
     height: 340px;
     margin-left: 20px;
     padding: 20px;
+    width: 450px;
+}
+
+.contact > .contact__email{
+    border-bottom: 1px solid blue;
 }
 
 .contact > form{
-    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 600px; */
+}
+.contact > form > button{
+    border: 1px solid;
+    margin: 10px auto 0 auto;
+    padding: 7px 12px;
+    width: 200px;
 }
 
-.contact > .contact__group{
-    border: 1px solid;
+.contact > form > textarea{
+    height: 140px;
+    margin-top: 10px;
+    width: 405px;
+}
+.contact > form > .contact__group{
     display: flex;
-    justify-content: space-around;
-    width: 400px;
+    margin-top: 5px;
+    width: 430px;
+}
+
+.contact__group > .contact__group-rightInput{
+    margin-left: 15px;
+}
+
+.contact > form > .contact__group-textArea{
+    margin-top: 20px;
 }

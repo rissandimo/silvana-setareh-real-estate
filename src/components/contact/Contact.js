@@ -14,30 +14,20 @@ const Contact = () => {
     return (
 
     <div className="contact">
-        <p>Email Me</p>
+        <p className='contact__email'>Email Me</p>
         <form>
             <div className="contact__group">
-            <FormControl>
                 <TextField value={firstName} label='First Name' onChange={e => setFirstName(e.target.value)} />
-            </FormControl>
-            <FormControl>
-                <TextField value={lastName} label='Last Name' onChange={e => setLastName(e.target.value)} />
-            </FormControl>
+                <TextField value={lastName} label='Last Name' onChange={e => setLastName(e.target.value)} className='contact__group-rightInput' />
             </div>
 
             <div className="contact__group">
-            <FormControl>
                 <TextField value={email} label='Email' onChange={e => setEmail(e.target.value)} />
-            </FormControl>
-            <FormControl>
-                <TextField value={phone} label='Phone' onChange={e => setPhone(e.target.value)} />
-            </FormControl>
+                <TextField value={phone} label='Phone' onChange={e => setPhone(e.target.value)} className='contact__group-rightInput' />
             </div>
             
-            <FormControl>
-            <TextareaAutosize cols={30} rowsMin={4} placeholder="Comments" />
-            </FormControl>
-            <Button>Send</Button>
+            <textarea placeholder='comments'> </textarea>
+            <button>Send</button>
         </form>
     </div>
     )

@@ -2,6 +2,7 @@ import './App.css';
 
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
+import Slideshow from './components/slideshow/Slideshow';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <About />
         <Contact />
     </div>
+        <Slideshow />
     </div>
   );
 }

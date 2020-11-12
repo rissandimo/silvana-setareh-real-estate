@@ -11,11 +11,14 @@ const About = () => (
             <p>DRE# 123456</p>
             <div className="about__location">
                 <div className="about__address">
-                <span>202 N. Canon Dr. Beverly Hills, CA</span>
+                <span><strong>Address:</strong> 202 N. Canon Dr. Beverly Hills, CA</span>
                  <button className='button'>View My Profile</button>
                 </div>
-                 <p>Cell: 310 666 4744</p>
-                 <p>Email: silvana.setareh@gmail.com</p>
+                 <p><strong>Cell</strong> (310) 666-4744</p>
+                 <p>
+                 <strong>Email: </strong>
+                 <a href = "mailto: silvana.setareh@gmail.com">silvana.setareh@gmail.com</a>
+                </p>
             </div>
         </div>
     </div>
