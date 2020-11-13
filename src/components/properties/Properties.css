@@ -1,0 +1,8 @@
+.properties > h1{
+    border-bottom: 1px dotted gray;
+    width: 80%;
+    font-weight: 400;
+    margin: 40px auto 0 auto;
+    padding-bottom: 20px;
+    text-align: center;
+}

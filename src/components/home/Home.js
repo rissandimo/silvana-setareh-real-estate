@@ -1,8 +1,6 @@
 import React from 'react';
 import './Home.css';
 
-// <div className="topSection">
-
 // Components
 import About from '../about/About'
 import Contact from '../contact/Contact'
