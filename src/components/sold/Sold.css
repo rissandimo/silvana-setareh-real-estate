@@ -1,0 +1,19 @@
+.sold{
+    padding: 10px 20px;
+}
+
+.sold__group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sold__group > .property{
+    display: flex;
+    flex-direction: column;
+}
+
+.property > .property__details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
