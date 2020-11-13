@@ -6,3 +6,31 @@
     padding-bottom: 20px;
     text-align: center;
 }
+
+.property{
+    position: relative;
+}
+
+.properties > .properties__group{
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.property > .property__details{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.property > img{
+    height: 350px;
+    width: 600px;
+}
+
