@@ -1,0 +1,23 @@
+.footer{
+    background-color: #1A1A1A;
+    color: white;
+    height: 500px;
+}
+
+.footer > .footer__address{
+    display: flex;
+}
+
+.footer > .footer__address > .footer__section{
+    display: flex;
+}
+
+.footer__section > .section__details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+} 
+
+.footer__font{
+    color: grey;
+}

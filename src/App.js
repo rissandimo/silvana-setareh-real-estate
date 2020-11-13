@@ -2,6 +2,7 @@ import './App.css';
 
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
 import Slideshow from './components/slideshow/Slideshow';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Contact />
     </div>
         <Slideshow />
+        <Footer />
     </div>
   );
 }
