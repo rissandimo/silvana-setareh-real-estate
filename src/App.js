@@ -12,7 +12,9 @@ function App() {
         <About />
         <Contact />
     </div>
+    <div className="middleSection">
         <Slideshow />
+    </div>
         <Footer />
     </div>
   );
