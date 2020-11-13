@@ -1,0 +1,14 @@
+.header{
+    background-color: #1A1A1A;
+    color: white;
+    align-items: center;
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+    padding: 10px 20px;
+}
+
+.header > a:hover{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+}

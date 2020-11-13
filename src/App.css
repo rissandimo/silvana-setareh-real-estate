@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+a,
+a:active{
+  text-decoration: none;
+  color: white;
+}
+
 body{
   background-color: #F5F5F6;
   margin: 0 auto;
@@ -24,6 +30,6 @@ body{
 .topSection{
   display: flex;
   justify-content: space-between;
-  margin: 30px auto 0 auto;
+  margin: 100px auto 0 auto;
   width: 1400px;
 }
