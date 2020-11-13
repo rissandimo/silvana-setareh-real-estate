@@ -1,14 +1,21 @@
 .header{
+    align-items: center;
     background-color: #1A1A1A;
     color: white;
-    align-items: center;
     display: flex;
     height: 70px;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px 20px;
 }
 
-.header > a:hover{
+.header > .header__links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+}
+
+.header >.header__links > a:hover{
     border-bottom: 1px solid lightgray;
     padding-bottom: 5px;
 }
