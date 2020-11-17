@@ -16,23 +16,37 @@ const Contact = () => {
 return (
     <div className="contact">
         <div className="contact__container">
+
             <div className="contact__form">
                 <ContactForm />
             </div>
-            <div className="contact__social-media">
-                <p>Follow Silvana Saidian </p>
-                <div className="social__media-links">
-                <span className="link">
-                    <FacebookIcon className='link' />
-                </span>
-                <span className="link">
-                    <InstagramIcon className='link' />
-                </span>
-                <span className="link">
-                    <TwitterIcon className='link' />
-                </span>
+
+            <div className="contact__info">
+                <div className="contact__social-media">
+                    <p>Follow Silvana Saidian </p>
+                    <div className="social__media-links">
+                    <span className="link">
+                        <FacebookIcon />
+                    </span>
+                    <span className="link">
+                        <InstagramIcon />
+                    </span>
+                    <span className="link">
+                        <TwitterIcon />
+                    </span>
+                    </div>
+                </div>
+
+                <div className="contact__address">
+                    <h4 className="city">BEVERLY HILLS</h4>
+                    <div className="location">
+                        <span>123 N PALM DR</span>
+                        <span>BEVERLY HILLS, CA 90212</span>
+                        <span>(310) 666-7477</span>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
         )

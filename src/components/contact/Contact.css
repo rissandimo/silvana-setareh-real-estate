@@ -1,6 +1,32 @@
 .contact{
     background-color: #20346F;
     padding: 40px;
+    height: 700px;
+}
+
+.contact__address{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 120px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    width: 200px;
+}
+
+.contact__address > .city{
+    color:#999999;
+    font-weight: 400;
+}
+
+.contact__address > .location{
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    letter-spacing: 0.04rem;
+    line-height: 1.2rem;
 }
 
 .contact__container{
@@ -16,10 +42,16 @@
     text-align: center;
 }
 
+.contact__container > .contact__info{
+    display: flex;
+    flex-direction: column;
+}
+
 .contact__social-media > p{
     color: white;
     font-weight: 600;
     margin: 20px 0;
+    text-align: center;
 }
 
 .contact__social-media > .social__media-links{
