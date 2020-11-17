@@ -23,7 +23,7 @@ const Slideshow = () => {
     
         <div className='slideshow'>
 
-        <h1>Properties that I have sold</h1>
+        <h1>SOLD PROPERTIES</h1>
         <Slide easing="ease">
           <div className="each-slide">
             <img src={houseImage} alt=""/>

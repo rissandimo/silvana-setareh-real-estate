@@ -26,7 +26,7 @@ const ContactForm = () => {
                 <TextField value={phone} label='Phone' onChange={e => setPhone(e.target.value)} className='contact__group-rightInput' />
             </div>
             
-            <textarea value={comments} placeholder='comments'> </textarea>
+            <textarea value={comments} onChange={e => setComments(e.target.value)} placeholder='comments' className="contact__group-message"> </textarea>
             <button>Send</button>
         </form>
 
