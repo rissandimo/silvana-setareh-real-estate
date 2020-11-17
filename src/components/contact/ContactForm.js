@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './Contact.css';
+import './ContactForm.css';
 
 import { Button, FormControl, TextareaAutosize, TextField } from '@material-ui/core';
 
-const Contact = () => {
+const ContactForm = () => {
     
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -38,4 +38,4 @@ const Contact = () => {
     )
 }
 
-export default Contact;
+export default ContactForm;
