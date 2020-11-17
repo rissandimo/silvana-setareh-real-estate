@@ -1,0 +1,43 @@
+.contact{
+    background-color: #20346F;
+    padding: 40px;
+}
+
+.contact__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    width: 850px;
+}
+
+.contact__container > .contact__social-media{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact__social-media > p{
+    color: white;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.contact__social-media > .social__media-links{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.social__media-links > .link{
+    align-items: center;
+    display: flex;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.link:hover{
+    background-color: darkgray;
+    color: white;
+}

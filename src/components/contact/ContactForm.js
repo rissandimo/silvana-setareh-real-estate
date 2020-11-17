@@ -13,7 +13,7 @@ const ContactForm = () => {
 
     return (
 
-    <div className="contact">
+    <div className="contact-form">
         <p className='contact__email'>Email Me</p>
         <form>
             <div className="contact__group">

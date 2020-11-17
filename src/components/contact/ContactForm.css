@@ -1,4 +1,4 @@
-.contact{
+.contact-form{
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -13,30 +13,30 @@
     box-shadow: 6px 9px 18px -4px rgba(0,0,0,0.75);
 }
 
-.contact > .contact__email{
+.contact-form > .contact-form__email{
     border-bottom: 1px solid blue;
 }
 
-.contact > form{
+.contact-form > form{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
     height: 350px;
 }
-.contact > form > button{
+.contact-form > form > button{
     border: 1px solid;
     margin: 40px auto 0 auto;
     padding: 7px 12px;
     width: 200px;
 }
 
-.contact > form > textarea{
+.contact-form > form > textarea{
     height: 140px;
     margin-top: 10px;
     width: 405px;
 }
-.contact > form > .contact__group{
+.contact-form > form > .contact__group{
     display: flex;
     margin-top: 5px;
     width: 430px;
