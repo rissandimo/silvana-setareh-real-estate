@@ -1,51 +1,75 @@
 .contact{
-    background-color: white;
-    border-radius: 10px;
+    background-color: #20346F;
+    padding: 40px;
+    height: 700px;
+}
+
+.contact__address{
+    color: white;
     display: flex;
     flex-direction: column;
-    height: 400px;
-    margin-left: 20px;
-    padding: 20px;
-    width: 450px;
-
-    -webkit-box-shadow: 6px 9px 18px -4px rgba(0,0,0,0.75);
-    -moz-box-shadow: 6px 9px 18px -4px rgba(0,0,0,0.75);
-    box-shadow: 6px 9px 18px -4px rgba(0,0,0,0.75);
-}
-
-.contact > .contact__email{
-    border-bottom: 1px solid blue;
-}
-
-.contact > form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    height: 350px;
-}
-.contact > form > button{
-    border: 1px solid;
-    margin: 40px auto 0 auto;
-    padding: 7px 12px;
+    justify-content: space-around;
+    height: 120px;
+    margin: 20px auto 0 auto;
+    text-align: center;
     width: 200px;
 }
 
-.contact > form > textarea{
-    height: 140px;
-    margin-top: 10px;
-    width: 405px;
+.contact__address > .city{
+    color:#999999;
+    font-weight: 400;
 }
-.contact > form > .contact__group{
+
+.contact__address > .location{
+    font-size: 13px;
     display: flex;
-    margin-top: 5px;
-    width: 430px;
+    flex-direction: column;
+    font-weight: 300;
+    letter-spacing: 0.04rem;
+    line-height: 1.2rem;
 }
 
-.contact__group > .contact__group-rightInput{
-    margin-left: 15px;
+.contact__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    width: 850px;
 }
 
-.contact > form > .contact__group-textArea{
-    margin-top: 20px;
+.contact__container > .contact__social-media{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact__container > .contact__info{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__social-media > p{
+    color: white;
+    font-weight: 600;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.contact__social-media > .social__media-links{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.social__media-links > .link{
+    align-items: center;
+    display: flex;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.link:hover{
+    background-color: darkgray;
+    color: white;
 }

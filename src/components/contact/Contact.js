@@ -1,41 +1,55 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Contact.css';
 
-import { Button, FormControl, TextareaAutosize, TextField } from '@material-ui/core';
+// Components
+import ContactForm from './ContactForm';
+
+// Material UI
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import TwitterIcon from '@material-ui/icons/Twitter';
+
 
 const Contact = () => {
-    
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
-    const [email, setEmail] = useState('');
-    const [phone, setPhone] = useState('');
-    const [comments, setComments] = useState('');
 
-    return (
 
+return (
     <div className="contact">
-        <p className='contact__email'>Email Me</p>
-        <form>
-            <div className="contact__group">
-                <TextField value={firstName} label='First Name' onChange={e => setFirstName(e.target.value)} />
-                <TextField value={lastName} label='Last Name' onChange={e => setLastName(e.target.value)} className='contact__group-rightInput' />
+        <div className="contact__container">
+
+            <div className="contact__form">
+                <ContactForm />
             </div>
 
-            <div className="contact__group">
-                <TextField value={email} label='Email' onChange={e => setEmail(e.target.value)} />
-                <TextField value={phone} label='Phone' onChange={e => setPhone(e.target.value)} className='contact__group-rightInput' />
-            </div>
-            
-            <textarea value={comments} placeholder='comments'> </textarea>
-            <button>Send</button>
-        </form>
+            <div className="contact__info">
+                <div className="contact__social-media">
+                    <p>Follow Silvana Saidian </p>
+                    <div className="social__media-links">
+                    <span className="link">
+                        <FacebookIcon />
+                    </span>
+                    <span className="link">
+                        <InstagramIcon />
+                    </span>
+                    <span className="link">
+                        <TwitterIcon />
+                    </span>
+                    </div>
+                </div>
 
+                <div className="contact__address">
+                    <h4 className="city">BEVERLY HILLS</h4>
+                    <div className="location">
+                        <span>123 N PALM DR</span>
+                        <span>BEVERLY HILLS, CA 90212</span>
+                        <span>(310) 666-7477</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-
-    
-
-
-    )
+        )
 }
 
 export default Contact;

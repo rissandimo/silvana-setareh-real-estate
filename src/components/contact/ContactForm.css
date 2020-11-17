@@ -1,0 +1,53 @@
+.contact-form{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    margin-left: 20px;
+    padding: 20px;
+    width: 450px;
+
+    -webkit-box-shadow: 6px 9px 18px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 9px 18px -4px rgba(0,0,0,0.75);
+    box-shadow: 6px 9px 18px -4px rgba(0,0,0,0.75);
+}
+
+.contact-form > .contact-form__email{
+    border-bottom: 1px solid blue;
+}
+
+.contact-form > form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: 350px;
+}
+.contact-form > form > button{
+    border: 1px solid;
+    margin: 40px auto 0 auto;
+    padding: 7px 12px;
+    width: 200px;
+}
+
+.contact-form > form > .contact__group-message{
+    font-size: 1.5rem;
+    height: 140px;
+    margin-top: 10px;
+    outline: 0;
+    width: 405px;
+}
+.contact-form > form > .contact__group{
+    display: flex;
+    margin-top: 5px;
+    width: 430px;
+}
+
+.contact__group > .contact__group-rightInput{
+    margin-left: 15px;
+}
+
+.contact > form > .contact__group-textArea{
+    margin-top: 20px;
+}
