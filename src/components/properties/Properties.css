@@ -1,0 +1,55 @@
+.properties > h2{
+    background-color: #F5F5F5;
+    border-bottom: 2px solid lightgrey;
+    width: 50%;
+    font-size: 40px;
+    font-family: serif;
+    font-weight: 400;
+    margin: 40px auto 0 auto;
+    padding-bottom: 20px;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+}
+
+.property{
+    position: relative;
+}
+
+.properties > .properties__group{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px;
+    width: 95%;
+}
+
+.property > .property__details{
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 400;
+    height: 120px;
+    line-height: 2rem;
+    bottom: 7rem;
+    opacity: 0.6;
+    padding: 10px 40px;
+    position: absolute;
+    width: 100%;
+    transition: all 0.3s ease-in;
+}
+
+.property__details > .property__details-address{
+    font-weight: 600;
+}
+
+.property__details:hover{
+    opacity: 0.9;
+}
+
+.property > img{
+    height: 350px;
+    width: 800px;
+}
+

@@ -1,12 +1,10 @@
 import './App.css';
 
 // Components
-import About from './components/about/About';
-import Contact from './components/contact/Contact';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 import Footer from './components/footer/Footer';
-import Slideshow from './components/slideshow/Slideshow';
+import Properties from './components/properties/Properties';
 
 // Router
 import { Route, Switch } from 'react-router-dom';
@@ -18,7 +16,8 @@ function App() {
     <Header />
 
     <Switch>
-      <Route path='/' component={Home} /> 
+      <Route exact path='/' component={Home} /> 
+      <Route path='/properties' component={Properties} />
     </Switch>
     
     <Footer />
