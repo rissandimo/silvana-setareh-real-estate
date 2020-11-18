@@ -1,6 +1,7 @@
 import './App.css';
 
 // Components
+import About from './components/about/About';
 import Contact from './components/contact/Contact';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
@@ -19,6 +20,7 @@ function App() {
 
     <Switch>
       <Route exact path='/' component={Home} /> 
+      <Route path='/about' component={About} />
       <Route path='/properties' component={Properties} />
       <Route path='/contact' component={Contact} />
       <Route path='/sold' component={Sold} />
