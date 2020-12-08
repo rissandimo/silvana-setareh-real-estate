@@ -1,20 +1,27 @@
 .about{
-    margin: 5rem auto 0;
+    background-color: #1A1A1A;
+    color: white;
+}
+
+.about__info{
+    padding: 3rem;
     width: 90%;
 }
 
 .about__info > p{
     font-weight: 200;
     line-height: 1.8rem;
-    margin-bottom: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
 }
 
 .about__info > h4{
     margin-bottom: 2rem;
+    padding-left: 2rem;
 }
 
-img{
-    margin-bottom: 2rem;
-    margin-left: 3rem;
+.about > img{
     float: right;
+    border-radius: 50%;
+    padding: 4rem;
 }
