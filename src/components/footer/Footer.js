@@ -8,7 +8,7 @@ import ScheduleIcon from '@material-ui/icons/Schedule';
 const Footer = () => {
     return (
         <div className="footer">
-        <h1>Silvana Saidian</h1>
+        <h1>Soraya Setareh</h1>
 
         <div className="footer__address">
 
@@ -17,7 +17,7 @@ const Footer = () => {
                 <BusinessIcon fontSize='large' className='footer__font' />
             </div>
             <div className="section__details">
-                <span>SILVANA SAIDIAN</span>
+                <span>SORAYA SETAREH</span>
                 <span>123 N. PALM DR</span>
                 <span>BEVERLY HILLS, CA 90210</span>
                 <span>DRE# 123456</span>
@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
                 <div className="section__details">
                     <span>TELEPHONE</span>
-                    <span>(310) 666-4744</span>
+                    <span>(310) 625-2123</span>
                 </div>
             </div>
 

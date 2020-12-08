@@ -23,7 +23,7 @@ return (
 
             <div className="contact__info">
                 <div className="contact__social-media">
-                    <p>Follow Silvana Saidian </p>
+                    <p>Follow Soraya Setareh </p>
                     <div className="social__media-links">
                     <span className="link">
                         <FacebookIcon />
@@ -42,7 +42,7 @@ return (
                     <div className="location">
                         <span>123 N PALM DR</span>
                         <span>BEVERLY HILLS, CA 90212</span>
-                        <span>(310) 666-7477</span>
+                        <span>(310) 625-2123</span>
                     </div>
                 </div>
             </div>
