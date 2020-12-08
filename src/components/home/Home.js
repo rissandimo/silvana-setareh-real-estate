@@ -2,15 +2,14 @@ import React from 'react';
 import './Home.css';
 
 // Components
-import About from '../about/About'
+import Hero from '../hero/Hero';
 import ContactForm from '../contact/ContactForm'
 import Slideshow from '../slideshow/Slideshow'
 
 const Home = () => (
     <div className="home">
         <div className="topSection">
-            <About />
-            <ContactForm />
+            <Hero />
         </div>
         <div className="middleSection">
             <Slideshow />
