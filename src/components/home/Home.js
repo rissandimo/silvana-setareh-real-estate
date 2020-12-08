@@ -8,8 +8,8 @@ import Slideshow from '../slideshow/Slideshow'
 
 const Home = () => (
     <div className="home">
-        <div className="topSection">
             <Hero />
+        <div className="topSection">
         </div>
         <div className="middleSection">
             <Slideshow />
