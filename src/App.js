@@ -8,6 +8,9 @@ import Footer from './components/footer/Footer';
 import Properties from './components/properties/Properties';
 import Sold from './components/sold/Sold';
 
+// Pages
+import AboutPage from './pages/about/AboutPage'
+
 // Router
 import { Route, Switch } from 'react-router-dom';
 
@@ -19,6 +22,7 @@ function App() {
 
     <Switch>
       <Route exact path='/' component={Home} /> 
+      <Route path='/about' component={AboutPage} />
       <Route path='/properties' component={Properties} />
       <Route path='/contact' component={Contact} />
       <Route path='/sold' component={Sold} />
