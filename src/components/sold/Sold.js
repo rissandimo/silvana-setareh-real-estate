@@ -4,10 +4,30 @@ import './Sold.css'
 import houseImage from '../../assets/houses/house-1.jpg';
 import houseImage2 from '../../assets/houses/house-2.jpg';
 
+import beverlyHills from '../../assets/cities/bh.jpg';
+import encino from '../../assets/cities/encino.JPG';
+import losAngeles from '../../assets/cities/la.png';
+import westHollywood from '../../assets/cities/wh.jpg';
+
 const Sold = () => (
     <div className="sold">
 
-        <div className="sold__group">
+        <div className="cities">
+            <div className="city">
+                <img src={beverlyHills} alt=""/>
+            </div>
+            <div className="city">
+                <img src={encino} alt=""/>
+            </div>
+            <div className="city">
+                <img src={losAngeles} alt=""/>
+            </div>
+            <div className="city">
+                <img src={westHollywood} alt=""/>
+            </div>
+        </div>
+
+        {/* <div className="sold__group">
             <img src={houseImage} alt="house"/>
             <div className="sold__details">
                 <div className="address">
@@ -77,7 +97,7 @@ const Sold = () => (
                     </span>
                 </div>
             </div>
-        </div>
+        </div> */}
 
 
     </div>

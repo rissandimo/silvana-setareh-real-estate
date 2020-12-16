@@ -1,13 +1,32 @@
 .sold{
-    background-color: #FAFBFC;
+    /* background-color: #FAFBFC;
     padding: 10px 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
-    min-height: 618px;
+    min-height: 618px; */
 }
 
-.sold__group{
+.sold > .cities{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid;
+    margin: 5rem auto 0 auto;
+    width: 1500px;
+}
+
+.cities > .city{
+    grid: 1;
+    height: 240px;
+    /* width: 600px; */
+}
+
+.city > img{
+    height: 100%;
+    width: 100%;
+}
+
+/* .sold__group{
     background-color: white;
     border: 1px solid lightgray;
     display: flex;
@@ -50,5 +69,5 @@
 
 .house__info > .rooms{
     color: grey;
-}
+} */
 
