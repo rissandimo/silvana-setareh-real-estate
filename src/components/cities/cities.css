@@ -1,0 +1,49 @@
+.cities{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5rem auto;
+    width: 1850px;
+}
+
+.cities > .city{
+    height: 240px;
+    position: relative;
+    transition: all 1.5s;
+    /* width: 600px; */
+}
+
+.city >.city-info{
+    /* border: 1px solid; */
+    color: white;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    transition: all 1.5s;
+    top: 50%;
+    z-index: 500;
+}
+
+.city-info > h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    line-height: 1.4;
+    transition: all 1s;
+}
+
+.city:hover > .city-info > h4{
+    color: black;
+    font-weight: 600;
+    transform: translateY(-400%);
+}
+
+.city:hover{
+    opacity: 0.3;
+}
+
+.city > img{
+    height: 100%;
+    width: 100%;
+}

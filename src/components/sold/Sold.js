@@ -1,46 +1,24 @@
 import React from 'react';
 import './Sold.css'
 
+import { Route } from 'react-router-dom';
+
 import houseImage from '../../assets/houses/house-1.jpg';
 import houseImage2 from '../../assets/houses/house-2.jpg';
 
-import beverlyHills from '../../assets/cities/bh.jpg';
-import encino from '../../assets/cities/encino.JPG';
-import losAngeles from '../../assets/cities/la.jpg';
-import westHollywood from '../../assets/cities/wh.jpg';
+import Cities from '../cities/cities';
 
-const Sold = () => (
-    <div className="sold">
+import CityProperties from '../city-properties/city-properties';
 
-        <div className="cities">
+const Sold = ({ match }) => {
+    console.log(match);
+    return(
+        <div className="sold">
 
-            <div className="city">
-                <div className="city-info">
-                    <h4>Beverly Hills</h4>
-                </div>
-                <img src={beverlyHills} alt=""/>
-            </div>
+        <Route exact path={`${match.path}`} component={Cities} />
+        <Route path={`${match.path}/:cityId`} component={CityProperties} />
 
-            <div className="city">
-                <div className="city-info">
-                    <h4>Encino</h4>
-                </div>
-                <img src={encino} alt=""/>
-            </div>
-
-            <div className="city">
-                <div className="city-info">
-                    <h4>Los Angeles</h4>
-                </div>
-                <img src={losAngeles} alt=""/>
-            </div>
-            <div className="city">
-                <div className="city-info">
-                    <h4>West Hollywood</h4>
-                </div>
-                <img src={westHollywood} alt=""/>
-            </div>
-        </div>
+       
 
         {/* <div className="sold__group">
             <img src={houseImage} alt="house"/>
@@ -116,6 +94,6 @@ const Sold = () => (
 
 
     </div>
-)
+)}
 
 export default Sold;
