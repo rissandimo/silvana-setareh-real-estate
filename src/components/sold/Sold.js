@@ -9,10 +9,10 @@ import houseImage2 from '../../assets/houses/house-2.jpg';
 import Cities from '../cities/cities';
 import CityProperties from '../city-properties/city-properties';
 
-const Sold = () => (
+const Sold = ({ match }) => (
     <div className="sold">
-        <Cities />
-        <CityProperties />
+        <Route exact path={`${match.path}`} component={Cities} />
+        <Route path={`${match.path}/:cityId`} component={CityProperties} />
     </div>
 )
 

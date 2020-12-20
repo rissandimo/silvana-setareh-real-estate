@@ -21,10 +21,6 @@ const Property = ({ property }) => {
                 <p>MLS# {mls}</p>
             </div>
             <div className="row">
-                <p>{bedrooms} <span className="left">Bedrooms</span> </p>
-                <p>{type}</p>
-            </div>
-            <div className="row">
                 <p>{sqft} <span className="left">Sqft</span> </p>
                 <p>sold</p>
             </div>
