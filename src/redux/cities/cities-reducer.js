@@ -22,7 +22,7 @@ const INITIAL_STATE = {
             id: 3
         },
         {
-            title: 'Los Angeles',
+            title: 'West Hollywood',
             imageUrl: westHollywood,
             id: 4
         }
