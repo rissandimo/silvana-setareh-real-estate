@@ -1,4 +1,5 @@
 import React from 'react';
+import './propertyViewer.css';
 
 import Property from '../property/Property';
 

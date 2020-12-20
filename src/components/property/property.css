@@ -2,6 +2,10 @@
     background-color: white;
 }
 
+.property > img{
+    width: 100%;
+}
+
 .property > .address{
     font-size: 1.4rem;
     font-weight: 300;
@@ -11,13 +15,16 @@
 }
 
 .property > .property__description{
+    height: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0.5rem;
 }
 
 .property__description > .row{
     display: flex;
+    justify-content: space-between;
 }
 
 .row > p > .left{
