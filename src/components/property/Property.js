@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Property = ({ item }) => {
+const Property = ({ property }) => {
 
-    const { address, price, type } = item;
+    const { address, price, type } = property;
     return (
         <div className="previewItem">
             <h3 className="previewItem__name">{address}</h3>

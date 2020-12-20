@@ -2,13 +2,13 @@ import React from 'react';
 
 import Property from '../property/Property';
 
-const PropertyViewer = ({title, items}) => {
+const PropertyViewer = ({title, properties}) => {
     return (
         <div className="productPreview">
             <h2 className='productPreview__title'>{title}</h2>
             <div className="preview">
-                {items.map(item => (
-                    <Property key={item.id} item={item} alt="product"/>
+                {properties.map(property => (
+                    <Property key={property.id} property={property} alt="product"/>
                 ))}
             </div>
         </div>
