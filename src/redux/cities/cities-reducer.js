@@ -1,14 +1,30 @@
+
+import beverlyHills from '../../assets/cities/bh.jpg';
+import encino from '../../assets/cities/bh.jpg';
+import losAngeles from '../../assets/cities/la.jpg';
+import westHollywood from '../../assets/cities/wh.jpg';
+
 const INITIAL_STATE = {
-    cities: [
+    sold: [
         {
             title: 'Beverly Hills',
-            imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+            imageUrl: beverlyHills,
             id: 1
         },
         {
             title: 'Los Angeles',
-            imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+            imageUrl: losAngeles,
             id: 2
+        },
+        {
+            title: 'Encino',
+            imageUrl: encino,
+            id: 3
+        },
+        {
+            title: 'Los Angeles',
+            imageUrl: westHollywood,
+            id: 4
         }
     ]
 }
