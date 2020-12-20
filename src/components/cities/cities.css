@@ -9,11 +9,9 @@
     height: 240px;
     position: relative;
     transition: all 1.5s;
-    /* width: 600px; */
 }
 
 .city >.city-info{
-    /* border: 1px solid; */
     color: white;
     margin: 0 auto;
     position: absolute;
@@ -43,7 +41,7 @@
     opacity: 0.3;
 }
 
-.city > img{
+.city > .city__link > img{
     height: 100%;
     width: 100%;
 }

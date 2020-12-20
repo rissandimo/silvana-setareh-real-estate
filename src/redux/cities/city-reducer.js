@@ -9,22 +9,26 @@ const INITIAL_STATE = {
         {
             title: 'Beverly Hills',
             imageUrl: beverlyHills,
-            id: 1
+            id: 1,
+            linkUrl: '/sold/beverlyHills'
         },
         {
             title: 'Los Angeles',
             imageUrl: losAngeles,
-            id: 2
+            id: 2,
+            linkUrl: '/sold/losAngeles'
         },
         {
             title: 'Encino',
             imageUrl: encino,
-            id: 3
+            id: 3,
+            linkUrl: '/sold/encino'
         },
         {
             title: 'West Hollywood',
             imageUrl: westHollywood,
-            id: 4
+            id: 4,
+            linkUrl: '/sold/westHollywood'
         }
     ]
 }

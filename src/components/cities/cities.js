@@ -14,8 +14,8 @@ const Cities = ({ cities }) => {
     <div className="cities">
 
         <div className="cities">
-            {cities.map(({ title, imageUrl, id}) => (
-                <City key={id} title={title} imageUrl={imageUrl} />
+            {cities.map(({ title, imageUrl, id, linkUrl }) => (
+                <City key={id} title={title} imageUrl={imageUrl} linkUrl={linkUrl} />
             ))}
         </div>
     </div>

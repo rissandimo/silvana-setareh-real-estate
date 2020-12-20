@@ -29,7 +29,7 @@ const SOLD_PROPERTIES_DATA = [
            sqft: 2848,
            type: 'Residential',
            mls: 9393561
-        },
+        }
       ]
     },
     {
@@ -38,7 +38,7 @@ const SOLD_PROPERTIES_DATA = [
       routeName: 'losAngeles',
       properties: [
         {
-          id: 3,
+          id: 4,
           address: '466 S Holt Ave. Los Angeles, CA 90048',
           price: 1795000,
           bedrooms: 4,
