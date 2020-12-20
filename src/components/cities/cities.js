@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 
 import { createStructuredSelector } from 'reselect';
 
-import { selectDirectorySection } from '../../redux/cities/city-selector';
+import { selectSoldPropertyCities } from '../../redux/cities/city-selector';
 
 const Cities = ({ cities }) => {
 
@@ -23,7 +23,7 @@ const Cities = ({ cities }) => {
 }
 
 const mapStateToProps = createStructuredSelector({
-    cities: selectDirectorySection
+    cities: selectSoldPropertyCities
 })
 
 export default connect(mapStateToProps)(Cities);

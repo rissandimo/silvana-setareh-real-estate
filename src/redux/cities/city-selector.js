@@ -1,8 +1,8 @@
 import { createSelector } from 'reselect';
 
-const selectDirectory = state => state.cities;
+export const selectCity = state => state.cities;
 
-export const selectDirectorySection = createSelector(
-    [selectDirectory],
+export const selectSoldPropertyCities = createSelector(
+    [selectCity],
     cities => cities.cities
 );
