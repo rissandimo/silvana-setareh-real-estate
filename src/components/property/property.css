@@ -1,0 +1,31 @@
+.property{
+    background-color: white;
+}
+
+.property > .address{
+    font-size: 1.4rem;
+    font-weight: 300;
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
+}
+
+.property > .property__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.property__description > .row{
+    display: flex;
+}
+
+.row > p > .left{
+    color: darkgray;
+    font-weight: 500;
+}
+
+.property > .price{
+    font-size: 2rem;
+    font-weight: 400;
+}

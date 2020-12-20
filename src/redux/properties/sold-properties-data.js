@@ -1,3 +1,5 @@
+import house1 from '../../assets/houses/walden.jpg';
+
 const SOLD_PROPERTIES_DATA = [
     {
       id: 1,
@@ -5,10 +7,15 @@ const SOLD_PROPERTIES_DATA = [
       routeName: 'beverlyHills',
       properties: [
         {
-          id: 1,
-          name: 'Brown Brim',
-          imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
-          price: 25
+            id: 1,
+            address: '619 Waldren Dr, Beverly Hills, CA 90211',
+            price: 5255000,
+            bedrooms: 6,
+            bathrooms: 6,
+            image: house1,
+            sqft: 7195,
+            type: 'Residential',
+            mls: 13645833
         },
         {
           id: 2,
