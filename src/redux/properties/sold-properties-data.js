@@ -30,6 +30,13 @@ const SOLD_PROPERTIES_DATA = [
            type: 'Residential',
            mls: 9393561
         },
+      ]
+    },
+    {
+      id: 2,
+      title: 'Los Angeles',
+      routeName: 'losAngeles',
+      properties: [
         {
           id: 3,
           address: '466 S Holt Ave. Los Angeles, CA 90048',

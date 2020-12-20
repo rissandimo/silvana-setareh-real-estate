@@ -10,16 +10,17 @@ import { selectCity } from '../../redux/properties/properties-selector';
 const CityProperties = ({ soldProperties }) => {
 
     const { title, properties } = soldProperties;
-    // console.log(match);
-    console.log('sold properties', soldProperties);
+
     return(
     <div className="city__propertites">
-        <h2>Sold Properties in {title}</h2>
-        {
-        properties.map(property => (
-            <Property key={property.id} property={property} />
-        ))
-        }
+        <h2 className="title">Sold Properties in {title}</h2>
+        <div className="property__listings">
+            {
+            properties.map(property => (
+                <Property key={property.id} property={property} />
+            ))
+            }
+        </div>
     </div>
     )
 }
