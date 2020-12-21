@@ -1,0 +1,11 @@
+.city__propertites > .title{
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.property__listings{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+}

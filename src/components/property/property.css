@@ -1,0 +1,38 @@
+.property{
+    background-color: white;
+}
+
+.property > img{
+    width: 100%;
+}
+
+.property > .address{
+    font-size: 1.4rem;
+    font-weight: 300;
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
+}
+
+.property > .property__description{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+.property__description > .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row > p > .left{
+    color: darkgray;
+    font-weight: 500;
+}
+
+.property > .price{
+    font-size: 2rem;
+    font-weight: 400;
+}
