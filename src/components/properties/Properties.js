@@ -7,7 +7,7 @@ import houseImage3 from '../../assets/houses/house-3.jpg';
 
 const Properties = () => (
     <div className="properties">
-        <h2>Featured Listings</h2>
+        <h2>Luxury Real Estate</h2>
 
         <div className="properties__group">
             <div className="property">
