@@ -151,18 +151,19 @@ const FeaturedListings = () => {
                 <h1>Featured Listings</h1>
                 {SliderData.map((slide, index) => (
                     <ListingSlide key={index}>
-                        <ListingSlider>
-                            <ListingImage src={slide.image} alt={slide.alt}/>
-                            <ListingContent>
-                                <h1>{slide.title}</h1>
-                                <p>{slide.price}</p>
-                                <Button to={slide.path} primary='true'>
-                                {slide.label}
-                                    <Arrow />
-                                </Button>
-                            </ListingContent>
-                        </ListingSlider>
-
+                        {index === current && (
+                            <ListingSlider>
+                                <ListingImage src={slide.image} alt={slide.alt}/>
+                                <ListingContent>
+                                    <h1>{slide.title}</h1>
+                                    <p>{slide.price}</p>
+                                    <Button to={slide.path} primary='true'>
+                                    {slide.label}
+                                        <Arrow />
+                                    </Button>
+                                </ListingContent>
+                            </ListingSlider>
+                        )}
                     </ListingSlide>
                 ))}
                 <SliderButtons>
