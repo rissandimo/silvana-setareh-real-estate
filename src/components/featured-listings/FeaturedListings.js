@@ -134,6 +134,11 @@ const FeaturedListings = () => {
     const length = SliderData.length;
     const timeout = useRef(null);
 
+    const prevSlide = () => {
+        setCurrent(current === 0 ? length - 1: current - 1 );
+        console.log(current);
+    }
+
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1);
         console.log(current);
@@ -161,7 +166,7 @@ const FeaturedListings = () => {
                     </ListingSlide>
                 ))}
                 <SliderButtons>
-                    <PrevArrow />
+                    <PrevArrow onClick={prevSlide} />
                     <NextArrow onClick={nextSlide} />
                 </SliderButtons>
             </ListingsWrapper>
