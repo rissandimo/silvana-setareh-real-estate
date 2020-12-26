@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+html{
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+
 a,
 a:active{
   text-decoration: none;
@@ -13,6 +18,7 @@ a:active{
 body{
   background-color: #F5F5F6;
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
 }
 
 .button{

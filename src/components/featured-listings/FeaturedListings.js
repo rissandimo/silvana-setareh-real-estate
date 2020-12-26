@@ -1,5 +1,5 @@
 import { Button } from '@material-ui/core'; // Create custom button
-import React, { useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './featuredListings.css';
 import styled from 'styled-components/macro';
 import { css } from 'styled-components';
@@ -44,9 +44,6 @@ const ListingSlider = styled.div`
 `;
 
 const ListingContent = styled.div`
-border: 1px solid black;
-background: lightgray;
-color: black;
  position: absolute;
 height: 150px;
 z-index: 10;
@@ -54,22 +51,26 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-width: 400px;
+width: 270px;
 color: #fff;
-left: 2%;
-bottom: 5%;
+left: 1%;
+bottom: 2%;
 
-h1 {
-    font-size: clamp(1rem, 8vw, 2rem);
-    font-width: 400;
+h2 {
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 200;
+    letter-spacing: 0.15rem;
     text-transform: uppercase;
-    text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
     text-align: center;
     margin-bottom: 0.8rem;
 }
 
 p {
-    // margin-bottom: 1.2rem;
+    line-height: 1;
+    font-size: 25px;
+    font-family: "Arapey",Georgia,"Times New Roman",Times,serif;
+    font-style: italic;
     text-align: center;
     text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
 }
@@ -126,17 +127,30 @@ const FeaturedListings = () => {
     
     const [current, setCurrent] = useState(0);
     const length = SliderData.length;
-    // const timeout = useRef(null);
+    const timeout = useRef(null);
 
     const prevSlide = () => {
         setCurrent(current === 0 ? length - 1: current - 1 );
-        console.log(current);
     }
 
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1);
-        console.log(current);
     }
+
+    useEffect(() => {
+        const nextSlide = () => {
+            setCurrent(current => (current === length - 1 ? 0 : current + 1));
+        };
+
+        timeout.current = setTimeout(nextSlide, 3000);
+
+        return function(){
+            if(timeout.current){
+                clearTimeout(timeout.current);
+            }
+        };
+    }, [current, length]
+    );
 
 
     return(
@@ -152,7 +166,7 @@ const FeaturedListings = () => {
                             <ListingSlider>
                                 <ListingImage src={slide.image} alt={slide.alt}/>
                                 <ListingContent>
-                                    <h1>{slide.title}</h1>
+                                    <h2>{slide.title}</h2>
                                     <p>{slide.price}</p>
                                     {/* <Button to={slide.path} primary='true'>
                                     {slide.label}
