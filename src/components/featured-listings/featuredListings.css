@@ -1,0 +1,38 @@
+.title__container{
+    /* border: 1px solid green; */
+    width: 23rem;
+    margin: 1rem auto;
+    position: relative;
+}
+.title__container > .title{
+    /* border: 1px solid; */
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: serif;
+    text-align: center;
+}
+
+.title__container::before{
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 12px;
+    border: 1px solid #000;
+    border-top: none;
+    border-bottom: none;
+    right: 100%;
+    top: 0;
+}
+
+.title__container::after{
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 12px;
+    border: 1px solid #000;
+    border-top: none;
+    border-bottom: none;
+    left: 100%;
+    top: 0;
+}

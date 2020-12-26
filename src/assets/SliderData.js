@@ -1,9 +1,10 @@
-import house1 from './houses/walden.jpg';
-import house2 from './houses/2.jpg';
-import house3 from './houses/3.jpg';
-import house4 from './houses/4.jpg';
-import house5 from './houses/5.jpg';
-import house6 from './houses/6.jpg';
+// import house1 from './houses/walden.jpg';
+import house1 from './houses/house-1.jpg';
+import house2 from './houses/house-2.jpg';
+import house3 from './houses/house-3.jpg';
+import house4 from './houses/house-4.jpg';
+import house5 from './houses/house-5.jpg';
+import house6 from './houses/house-6.jpg';
 
 export const SliderData = [
     {

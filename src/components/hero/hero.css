@@ -1,5 +1,5 @@
 .hero{
-    background-color: green;
+    /* background-color: green; */
     background-image: url('../../assets/hero.jpg');
     background-size: cover;
     height: 93vh;
