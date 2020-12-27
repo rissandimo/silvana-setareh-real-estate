@@ -127,23 +127,28 @@ const FeaturedListings = () => {
     
     const [current, setCurrent] = useState(0);
     const length = SliderData.length;
+    // console.log('length: ', length);
     const timeout = useRef(null);
 
     const prevSlide = () => {
+        //if current slide === first slide -> start current from last slide, else go back 1 slide
         setCurrent(current === 0 ? length - 1: current - 1 );
     }
-
+    
     const nextSlide = () => {
+        //if current slide === last slide -> start current from first slide, else go forward 1 slide
         setCurrent(current === length - 1 ? 0 : current + 1);
     }
-
+    
     useEffect(() => {
         const nextSlide = () => {
+            //if current slide is the last slide -> start current from the beginning, else go forward 1 slide
             setCurrent(current => (current === length - 1 ? 0 : current + 1));
         };
 
         timeout.current = setTimeout(nextSlide, 3000);
 
+        // Allows the slide to change gracefully, rather abruptly
         return function(){
             if(timeout.current){
                 clearTimeout(timeout.current);
