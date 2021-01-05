@@ -13,11 +13,10 @@
 }
 
 .contact > .header{
-    height: 160px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 8rem;
 }
 
 .header > .contact{

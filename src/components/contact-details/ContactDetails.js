@@ -26,7 +26,7 @@ const ContactDetails = () => (
 
     <div className="social">
         <a href="#" className="link">
-            <FacebookIcon />
+            <FacebookIcon className="icon" />
         </a>
         <a href="#" className="link">
             <InstagramIcon />
