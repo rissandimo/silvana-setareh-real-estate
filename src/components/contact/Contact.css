@@ -1,10 +1,37 @@
 .contact{
     color: white;
     background-color: #1A1A1A;
-    border: 3px solid green;
-    padding: 40px;
-    height: 700px;
+    height: 90vh;
+}
+
+.contact > .body{
     display: grid;
     grid-gap: 5rem;
     grid-template-columns: repeat(2, 1fr);
+    margin: 2rem auto;
+    max-width: 1400px;
 }
+
+.contact > .header{
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 8rem;
+}
+
+.header > .contact{
+    font-size: 5rem;
+    font-weight: 200;
+    line-height: 1.2;
+    letter-spacing: 0.7rem;
+}
+
+.header > .name{
+    font-size: 1rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+}
+

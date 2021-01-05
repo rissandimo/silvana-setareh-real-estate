@@ -28,6 +28,12 @@ const ContactDetails = () => (
         <a href="#" className="link">
             <FacebookIcon />
         </a>
+        <a href="#" className="link">
+            <InstagramIcon />
+        </a>
+        <a href="#" className="link">
+            <TwitterIcon />
+        </a>
     </div>
 
 </div>

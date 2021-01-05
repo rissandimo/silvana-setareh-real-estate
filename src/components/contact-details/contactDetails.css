@@ -1,0 +1,41 @@
+.contact__details{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__details > h5{
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+}
+
+.contact__details > .address,
+.contact__details > .agency,
+.contact__details > .telephone{
+    font-family: serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.contact__details > .social{
+    border: 1px solid;
+    display: flex;
+    justify-content: space-around;
+    max-width: 400px;
+}
+
+.social > .link{
+    border-radius: 50%;
+    border: 2px solid;
+    line-height: 1;
+    padding: 1rem;
+}
+
+.social .link:hover {
+    color:#1A1A1A;
+    background-color: white;
+}
