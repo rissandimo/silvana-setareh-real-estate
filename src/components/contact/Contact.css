@@ -1,10 +1,10 @@
 .contact{
-    background-color: #20346F;
+    background-color: #1A1A1A;
     padding: 40px;
     height: 700px;
 }
 
-.contact__address{
+/* .contact__address{
     color: white;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@
     font-weight: 300;
     letter-spacing: 0.04rem;
     line-height: 1.2rem;
-}
+} */
 
 .contact__container{
     display: grid;
@@ -36,7 +36,7 @@
     width: 850px;
 }
 
-.contact__container > .contact__social-media{
+/* .contact__container > .contact__social-media{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -52,9 +52,9 @@
     font-weight: 600;
     margin: 20px 0;
     text-align: center;
-}
+} */
 
-.contact__social-media > .social__media-links{
+/* .contact__social-media > .social__media-links{
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
@@ -72,4 +72,4 @@
 .link:hover{
     background-color: darkgray;
     color: white;
-}
+} */

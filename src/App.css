@@ -27,15 +27,3 @@ body{
   padding: 7px 7px;
   text-transform: uppercase;
 }
-
-.middleSection{
-  margin: 100px auto;
-  width: 1500px;
-}
-
-.topSection{
-  display: flex;
-  justify-content: space-between;
-  margin: 100px auto 0 auto;
-  width: 1400px;
-}

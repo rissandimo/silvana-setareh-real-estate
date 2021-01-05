@@ -10,7 +10,7 @@ export const SliderData = [
     {
         title: 'First House',
         price: '$4,00000',
-        path: '/homes',
+        path: '/featured-listings',
         label: 'View Home',
         image: house1,
         alt: 'House'
@@ -18,7 +18,7 @@ export const SliderData = [
     {
         title: 'Second House',
         price: '$4,00000',
-        path: '/homes',
+        path: '/featured-listings',
         label: 'View Home',
         image: house2,
         alt: 'House'
@@ -26,7 +26,7 @@ export const SliderData = [
     {
         title: 'Third House',
         price: '$4,00000',
-        path: '/homes',
+        path: '/featured-listings',
         label: 'View Home',
         image: house3,
         alt: 'House'
@@ -34,7 +34,7 @@ export const SliderData = [
     {
         title: 'Fourth House',
         price: '$4,00000',
-        path: '/homes',
+        path: '/featured-listings',
         label: 'View Home',
         image: house4,
         alt: 'House'
@@ -42,7 +42,7 @@ export const SliderData = [
     {
         title: 'Fifth House',
         price: '$4,00000',
-        path: '/homes',
+        path: '/featured-listings',
         label: 'View Home',
         image: house5,
         alt: 'House'
@@ -50,7 +50,7 @@ export const SliderData = [
     {
         title: 'Sixth House',
         price: '$4,00000',
-        path: '/homes',
+        path: '/featured-listings',
         label: 'View Home',
         image: house6,
         alt: 'House'

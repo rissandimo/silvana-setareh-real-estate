@@ -3,16 +3,15 @@ import './Home.css';
 
 // Components
 import Hero from '../hero/Hero';
-import ContactForm from '../contact/ContactForm'
-import Slideshow from '../slideshow/Slideshow'
+import About from '../../pages/about/AboutPage';
 
 const Home = () => (
     <div className="home">
-            <Hero />
+        <Hero />
         <div className="topSection">
         </div>
         <div className="middleSection">
-            <Slideshow />
+         <About />
         </div>
     </div>
 )

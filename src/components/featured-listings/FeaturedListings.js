@@ -1,4 +1,4 @@
-import { Button } from '@material-ui/core'; // Create custom button
+import { Button } from '../button/Button';
 import React, { useEffect, useState, useRef } from 'react';
 import './featuredListings.css';
 import styled from 'styled-components/macro';
@@ -173,10 +173,10 @@ const FeaturedListings = () => {
                                 <ListingContent>
                                     <h2>{slide.title}</h2>
                                     <p>{slide.price}</p>
-                                    {/* <Button to={slide.path} primary='true'>
+                                    <Button to={slide.path} primary='true'>
                                     {slide.label}
                                         <Arrow />
-                                    </Button> */}
+                                    </Button>
                                 </ListingContent>
                             </ListingSlider>
                         )}

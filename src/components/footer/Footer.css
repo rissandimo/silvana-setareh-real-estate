@@ -15,7 +15,7 @@
 .footer > .footer__address{
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .footer > .footer__address > .footer__section{
