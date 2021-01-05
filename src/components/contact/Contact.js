@@ -8,10 +8,8 @@ import ContactDetails from '../contact-details/ContactDetails';
 const Contact = () => {
 return (
     <div className="contact">
-        <div className="contact__container">
             <ContactForm />
             <ContactDetails />
-        </div>
     </div>
     )
 }

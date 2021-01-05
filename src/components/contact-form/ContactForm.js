@@ -14,30 +14,27 @@ const ContactForm = () => {
     const [comments, setComments] = useState('');
 
     return (
-
-    <div className="contact">
-
-        <div className="form">
+        <div className="contact__form">
             <div class="form-wrap">
                 <form>
                 <div class="form-group">
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="firstName" id="first-name" />
+                    <input type="text" name="fullName" id="fullName" placeholder="Name" />
                 </div>
                 <div class="form-group">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" name="lastName" id="last-name" />
+                    <input type="email" name="email" id="email" placeholder="Email" />
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" />
+                    <input type="phone" name="phone" id="phone" placeholder="Phone" />
                 </div>
-                <button type="submit" class="btn">Sign Up</button>
+                <div class="form-group">
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn">SEND</button>
                 </form>
             </div>
         </div>
 
-    </div>
+
 
     
 
