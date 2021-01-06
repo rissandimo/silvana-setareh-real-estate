@@ -22,7 +22,8 @@ const SOLD_PROPERTIES_DATA = [
             image: house1,
             sqft: 7195,
             type: 'Residential',
-            mls: 13645833
+            mls: 13645833,
+            sold: 1
         },
         {
            id: 2,
@@ -33,7 +34,8 @@ const SOLD_PROPERTIES_DATA = [
            image: house2,
            sqft: 2848,
            type: 'Residential',
-           mls: 9393561
+           mls: 9393561,
+           sold: 1
         },
         {
            id: 3,
@@ -44,7 +46,8 @@ const SOLD_PROPERTIES_DATA = [
            image: house4,
            sqft: 1901,
            type: 'Residential',
-           mls: 14760641
+           mls: 14760641,
+           sold: 1
         },
         {
            id: 4,
@@ -55,7 +58,8 @@ const SOLD_PROPERTIES_DATA = [
            image: house6,
            sqft: 2090,
            type: 'Residential',
-           mls: 17258278
+           mls: 17258278,
+           sold: 1
         },
         {
            id: 5,
@@ -66,7 +70,8 @@ const SOLD_PROPERTIES_DATA = [
            image: house7,
            sqft: 1989,
            type: 'Residential',
-           mls: 13711565
+           mls: 13711565,
+           sold: 1
         }
       ]
     },
@@ -83,7 +88,8 @@ const SOLD_PROPERTIES_DATA = [
           image: house3,
           sqft: 2563,
           type: 'Residential',
-          mls: 17230202
+          mls: 17230202,
+          sold: 1
         },
         {
           id: 2,
@@ -94,7 +100,8 @@ const SOLD_PROPERTIES_DATA = [
           image: house5,
           sqft: 1706,
           type: 'Residential',
-          mls: 18350564
+          mls: 18350564,
+          sold: 1
         },
         {
           id: 3,
@@ -105,7 +112,8 @@ const SOLD_PROPERTIES_DATA = [
           image: house10,
           sqft: 1937,
           type: 'Residential',
-          mls: 15818049
+          mls: 15818049,
+          sold: 1
         }
       ]
     },
@@ -122,7 +130,8 @@ const SOLD_PROPERTIES_DATA = [
           image: house9,
           sqft: 1654,
           type: 'Residential',
-          mls: 5022723
+          mls: 5022723,
+          sold: 1
         }
       ]
     }
