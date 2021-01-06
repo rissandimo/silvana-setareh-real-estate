@@ -10,7 +10,7 @@ const City = ({ title, imageUrl, linkUrl }) => (
     </div>
     <div className="houses__sold">
         <p>
-            8
+         Properties Sold: 8
         </p>
     </div>
     <Link to={linkUrl} className="city__link">
