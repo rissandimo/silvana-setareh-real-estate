@@ -1,0 +1,42 @@
+.cities > .city{
+    height: 240px;
+    position: relative;
+    transition: all 1.5s;
+}
+
+.city >.city-info{
+    color: white;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    transition: all 1.5s;
+    top: 50%;
+    z-index: 500;
+}
+
+.city-info > h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    line-height: 1.4;
+    transition: all 0.5s ease-out;
+}
+
+.city:hover > .city-info > h4{
+    transform: translateY(-300%);
+}
+
+.city:hover .city__link{
+    opacity: .5;
+}
+
+.city:hover .city-info{
+    color: black;
+}
+
+.city > .city__link > img{
+    height: 100%;
+    width: 100%;
+}

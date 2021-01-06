@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './city.css';
 
 const City = ({ title, imageUrl, linkUrl }) => (
 
