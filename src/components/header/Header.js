@@ -12,8 +12,9 @@ const Header = () => {
             </div>
             </Link>
             <div className="header__links">
+                <Link to='/'>HOME</Link>
                 <Link to='/sold'>SOLD</Link>
-                <Link to='/featured-listings'>FEATURED LISTINGS</Link>
+                {/* <Link to='/featured-listings'>FEATURED LISTINGS</Link> */}
                 {/* <Link to='/about'>ABOUT</Link> */}
                 <Link to='/contact'>CONTACT</Link>
             </div>

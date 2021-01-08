@@ -3,14 +3,8 @@ import { createSelector } from 'reselect';
 const CITY_ID_MAP = {
     beverlyHills: 1,
     losAngeles: 2,
-    westHollywood: 3
-}
-
-const CITY_TITLE_MAP = {
-    'Beverly Hills': 1,
-    'Los Angeles': 2,
-    'West Hollywood': 3,
-    'Encino': 4
+    westHollywood: 3,
+    encino: 4
 }
 
 const selectProperties = state => state.properties;

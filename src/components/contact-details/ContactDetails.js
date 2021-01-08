@@ -31,7 +31,7 @@ const ContactDetails = () => (
         <a href="#" className="link">
             <InstagramIcon />
         </a>
-        <a href="#" className="link">
+        <a href="https://www.linkedin.com/in/soraya-setareh-3a781625/" target="_blank" className="link">
             <TwitterIcon />
         </a>
     </div>
