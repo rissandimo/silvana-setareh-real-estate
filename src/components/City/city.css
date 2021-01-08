@@ -68,11 +68,11 @@
     opacity: .5;
 }
 
-.city:hover .city-info{
-    color: black;
-}
-
 .city > .city__link > img{
     height: 100%;
     width: 100%;
+}
+
+.city:hover .city-info{
+    color: black;
 }
