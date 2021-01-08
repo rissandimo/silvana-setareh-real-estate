@@ -13,7 +13,9 @@ import './city.css';
     <div className="city-info">
         <h4>{title}</h4>
     </div>
-    <p>properties sold: {soldProperties[--id].properties.length}</p>
+    <div className="houses__sold">
+        <p>properties sold: {soldProperties[--id].properties.length}</p>
+    </div>
     <Link to={linkUrl} className="city__link">
         <img src={imageUrl} alt=""/>
     </Link>
