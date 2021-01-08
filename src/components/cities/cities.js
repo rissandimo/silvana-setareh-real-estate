@@ -10,9 +10,6 @@ import { selectSoldPropertyCities } from '../../redux/cities/city-selector';
 import { selectSoldProperties } from '../../redux/properties/properties-selector';
 
 const Cities = ({ cities, properties }) => {
-    properties.forEach(property => {
-        console.log(property.properties.length);
-    })
     return(
     <div className="cities">
 

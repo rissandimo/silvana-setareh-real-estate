@@ -6,6 +6,13 @@ const CITY_ID_MAP = {
     westHollywood: 3
 }
 
+const CITY_TITLE_MAP = {
+    'Beverly Hills': 1,
+    'Los Angeles': 2,
+    'West Hollywood': 3,
+    'Encino': 4
+}
+
 const selectProperties = state => state.properties;
 
 export const selectSoldProperties = createSelector(
@@ -13,6 +20,13 @@ export const selectSoldProperties = createSelector(
     properties => properties.soldProperties
 )
 
+// Select properties based on city - city title
+export const selectPropertiesBasedOnCity = cityTitle => createSelector(
+    [selectSoldProperties],
+    properties => properties.find(property => property.id === 1)
+)
+
+// Select properties based on city - url param
 export const selectCity = cityUrlParam =>
 createSelector(
     [selectSoldProperties],

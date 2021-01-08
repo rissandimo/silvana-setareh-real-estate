@@ -1,27 +1,32 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './city.css';
 
-import { connect } from 'react-redux';
-// import { createStructuredSelector } from 'reselect';
-// import { getNumberOfPropertiesSold } from '../../redux/properties/properties-selector';
+import { selectPropertiesBasedOnCity } from '../../redux/properties/properties-selector';
 
-    const City = ({ title, imageUrl, linkUrl}) => {
-        // console.log('properties: ', properties);
+    const City = ({ title, imageUrl, linkUrl, soldProperties}) => {
+        console.log('sold properties', soldProperties);
         return(     
     <div className="city">
     <div className="city-info">
         <h4>{title}</h4>
     </div>
-    <div className="houses__sold">
-        <p>
-            Properties Sold: 
-        </p>
-    </div>
+    <p>Sold Properties {soldProperties.properties.length}</p>
     <Link to={linkUrl} className="city__link">
         <img src={imageUrl} alt=""/>
     </Link>
     </div>
     )}
 
-export default City;
+    // function mapStateToProps(state, ownProps) {
+    //     const { title } = ownProps
+    //     propertiesByCity: getPropertiesByCity(title, state)
+    //   }
+
+      
+    const mapStateToProps = (state, ownProps) => ({
+        soldProperties: selectPropertiesBasedOnCity('Beverly Hills')(state)
+    })
+
+export default connect(mapStateToProps)(City);
