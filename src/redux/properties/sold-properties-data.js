@@ -134,6 +134,24 @@ const SOLD_PROPERTIES_DATA = [
           sold: 1
         }
       ]
+    },
+    {
+      id: 4,
+      title: 'Encino',
+      properties: [
+        {
+          id: 1,
+          address: '138 N ALMONT Drive, West Hollywood, CA 90048',
+          price: 1000000,
+          bedrooms: 3,
+          bathrooms: 2,
+          image: house9,
+          sqft: 1654,
+          type: 'Residential',
+          mls: 5022723,
+          sold: 1
+        }
+      ]
     }
   ];
   

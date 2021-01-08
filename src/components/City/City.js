@@ -3,16 +3,17 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './city.css';
 
-import { selectPropertiesBasedOnCity } from '../../redux/properties/properties-selector';
+// import { selectPropertiesBasedOnCity } from '../../redux/properties/properties-selector';
 
-    const City = ({ title, imageUrl, linkUrl, soldProperties}) => {
-        console.log('sold properties', soldProperties);
+    const City = ({ id, title, imageUrl, linkUrl, soldProperties }) => {
+        // soldProperties[0].properties.length
+        // console.log('properties sold', );
         return(     
     <div className="city">
     <div className="city-info">
         <h4>{title}</h4>
     </div>
-    <p>Sold Properties {soldProperties.properties.length}</p>
+    <p>properties sold: {soldProperties[--id].properties.length}</p>
     <Link to={linkUrl} className="city__link">
         <img src={imageUrl} alt=""/>
     </Link>
@@ -25,8 +26,12 @@ import { selectPropertiesBasedOnCity } from '../../redux/properties/properties-s
     //   }
 
       
-    const mapStateToProps = (state, ownProps) => ({
-        soldProperties: selectPropertiesBasedOnCity('Beverly Hills')(state)
-    })
+    // const mapStateToProps = (state, ownProps) => ({
+    //     soldProperties: selectPropertiesBasedOnCity('Beverly Hills')(state)
+    // })
 
+const mapStateToProps = state => ({
+        soldProperties: state.properties.soldProperties
+    })
 export default connect(mapStateToProps)(City);
+

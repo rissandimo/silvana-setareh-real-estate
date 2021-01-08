@@ -23,7 +23,7 @@ export const selectSoldProperties = createSelector(
 // Select properties based on city - city title
 export const selectPropertiesBasedOnCity = cityTitle => createSelector(
     [selectSoldProperties],
-    properties => properties.find(property => property.id === 1)
+    properties => properties.find(property => property.id === CITY_TITLE_MAP[cityTitle])
 )
 
 // Select properties based on city - url param
