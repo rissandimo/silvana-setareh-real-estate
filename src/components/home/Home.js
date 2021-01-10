@@ -10,9 +10,7 @@ const Home = () => (
         <Hero />
         <div className="topSection">
         </div>
-        <div className="middleSection">
          <About />
-        </div>
     </div>
 )
 

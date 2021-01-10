@@ -8,7 +8,7 @@ import ScheduleIcon from '@material-ui/icons/Schedule';
 const Footer = () => {
     return (
         <div className="footer">
-        <h1>Soraya Setareh</h1>
+        {/* <h1>Soraya Setareh</h1> */}
 
         <div className="footer__address">
 

@@ -19,10 +19,6 @@
     background-color: black;
 }
 
-.header__links-transparent{
-    
-}
-
 .header >.header__links > a:hover{
     border-bottom: 1px solid lightgray;
     padding-bottom: 5px;
