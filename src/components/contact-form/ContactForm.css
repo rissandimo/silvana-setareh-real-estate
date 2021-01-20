@@ -28,7 +28,7 @@
   textarea{
     font-size: 0.8rem;
     padding: 1rem 1.2rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 0.1rem;
   }
 
