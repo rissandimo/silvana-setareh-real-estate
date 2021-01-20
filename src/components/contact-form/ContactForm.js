@@ -1,44 +1,45 @@
 import React, { useState } from 'react';
 import './ContactForm.css';
 
-import FacebookIcon from '@material-ui/icons/Facebook';
+import emailjs from 'emailjs-com';
 
-import { Button, FormControl, TextareaAutosize, TextField } from '@material-ui/core';
+// import FacebookIcon from '@material-ui/icons/Facebook';
+
+const userId = 'user_8iRLrvvVA8jNsC3PJ0U6B';
+const service_id = 'service_0um8hzd';
+const templateId = 'template_2umnyoc';
 
 const ContactForm = () => {
     
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
-    const [email, setEmail] = useState('');
-    const [phone, setPhone] = useState('');
-    const [comments, setComments] = useState('');
+    const sendEmail = e => {
+        e.preventDefault();
+
+        emailjs.sendForm(service_id, templateId, e.target, userId)
+        .then(result => console.log(result.text))
+        .catch(error => console.log(error.text));
+
+    }
 
     return (
         <div className="contact__form">
-            <div class="form-wrap">
-                <form>
-                <div class="form-group">
-                    <input type="text" name="fullName" id="fullName" placeholder="Name" />
+            <div className="form-wrap">
+                <form onSubmit={sendEmail}> 
+                <div className="form-group">
+                    <input type="text" name="from_name" id="fullName" placeholder="Name" />
                 </div>
-                <div class="form-group">
-                    <input type="email" name="email" id="email" placeholder="Email" />
+                <div className="form-group">
+                    <input type="email" name="client_email" id="email" placeholder="Email" />
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                     <input type="phone" name="phone" id="phone" placeholder="Phone" />
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                     <textarea name="message" id="message" placeholder="Message"></textarea>
                 </div>
-                <button type="submit" class="btn">SEND</button>
+                <button type="submit" className="btn">SEND</button>
                 </form>
             </div>
         </div>
-
-
-
-    
-
-
     )
 }
 

@@ -11,11 +11,14 @@ const ContactDetails = () => (
     <div className="contact__details">
     <h5>CONTACT DETAILS</h5>
     <p className="telephone">Tel: (310) 625-2123</p>
+    <p className="telephone">Fax: (310) 471-2602</p>
 
     <div className="address">
         <p>Mon - Friday, 9 am - 6 pm</p>
-        <p>123 N Palm Dr. Suite 123</p>
-        <p>Bevely Hills, CA 90210</p>
+        <p>
+        9197 Wilshire Blvd. Suite 321 <br />
+        Bevely Hills, CA 90210
+        </p>
     </div>
 
     <div className="agency">
