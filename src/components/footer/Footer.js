@@ -18,32 +18,32 @@ const Footer = () => {
             </div>
             <div className="section__details">
                 <span>SORAYA SETAREH</span>
-                <span>123 N. PALM DR</span>
-                <span>BEVERLY HILLS, CA 90210</span>
+                <span>9197 Wilshire Blvd. Suite 321 <br/>
+                    Bevely Hills, CA 90210</span> 
                 <span>DRE# 123456</span>
             </div>
         </div>
 
-            <div className="footer__section">
-                <div className="section__image">
-                    <PhoneIcon fontSize='large' className='footer__font'/>
-                </div>
-                <div className="section__details">
-                    <span>TELEPHONE</span>
-                    <span>(310) 625-2123</span>
-                </div>
+        <div className="footer__section">
+            <div className="section__image">
+                <PhoneIcon fontSize='large' className='footer__font'/>
             </div>
+            <div className="section__details">
+                <span>TELEPHONE</span>
+                <span>(310) 625-2123</span>
+            </div>
+        </div>
 
-            <div className="footer__section">
-                <div className="section__image">
-                    <ScheduleIcon fontSize='large' className='footer__font'/>
-                </div>
-                <div className="section__details">
-                    <span>HOURS</span>
-                    <span>MON - FRI</span>
-                    <span>10:00AM - 8:30PM</span>
-                </div>
+        <div className="footer__section">
+            <div className="section__image">
+                <ScheduleIcon fontSize='large' className='footer__font'/>
             </div>
+            <div className="section__details">
+                <span>HOURS</span>
+                <span>MON - FRI</span>
+                <span>10:00AM - 8:30PM</span>
+            </div>
+        </div>
         </div>
 
 

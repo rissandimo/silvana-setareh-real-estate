@@ -1,5 +1,6 @@
 .cities > .city{
-    height: 240px;
+    height: 200px;
+    width: 550px;
     position: relative;
     /* transition: all 1.5s; */
 }

@@ -60,18 +60,17 @@
     text-transform: uppercase;
 }
 
-@media(max-width: 870px){
+/* Ipad */
+@media(max-width: 768px){
     .hero{
-        height: 50vh;
+        height: 30vh;
     }
-}
-
-@media(max-width: 770px){
+    
     .hero__content > .welcome{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
-
-.hero__content > h2{
-    font-size: 1.2rem;
-}
+    
+    .hero__content > h2{
+    font-size: 1rem;
+    }
 }

@@ -1,7 +1,15 @@
 .cities{
     display: grid;
-    grid-gap: 0.5rem;
+    grid-gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
     margin: 5rem auto;
     width: 1850px;
+}
+
+/* 20 in screen */
+@media(max-width: 1800px){
+    .cities{
+        grid-template-columns: repeat(2, 1fr);
+        width: 1130px;
+    }
 }

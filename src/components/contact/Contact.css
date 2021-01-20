@@ -34,3 +34,10 @@
     letter-spacing: 0.15rem;
 }
 
+/* 20 in screen */
+@media(max-width: 1800px){
+    .contact{
+        height: auto;
+    }
+}
+
