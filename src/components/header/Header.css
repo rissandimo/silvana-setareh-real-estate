@@ -23,3 +23,10 @@
     border-bottom: 1px solid lightgray;
     padding-bottom: 5px;
 }
+
+/* Iphone */
+@media(max-width: 375px){
+    .header{
+        flex-direction: column;
+    }
+}

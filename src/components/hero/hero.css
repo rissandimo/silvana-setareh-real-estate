@@ -74,3 +74,10 @@
     font-size: 1rem;
     }
 }
+
+/* Iphone */
+@media(max-width: 375px){
+    .hero{
+        display: none;
+    }
+}
