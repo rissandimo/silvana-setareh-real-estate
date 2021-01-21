@@ -1,11 +1,9 @@
 .title__container{
-    /* border: 1px solid green; */
     width: 23rem;
     margin: 1rem auto;
     position: relative;
 }
 .title__container > .title{
-    /* border: 1px solid; */
     margin-top: 1rem;
     font-size: 2.5rem;
     font-weight: 500;

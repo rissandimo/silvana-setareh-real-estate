@@ -1,0 +1,7 @@
+/* Iphone */
+@media(max-width: 375px){
+  .home{
+    border: 1px solid green;
+    height: 700px;
+  }
+}

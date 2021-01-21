@@ -41,7 +41,6 @@
     }
 
     .about > img{
-        /* border: 1px solid; */
         display: block;
         margin: 5rem auto 1rem auto;
         padding: 0;
@@ -60,12 +59,22 @@
 /* Ipad */
 @media(max-width: 768px){
     .about__info{
-        /* border: 1px solid; */
         width: 90%;
-        /* padding-bottom: 1rem; */
+    }
+}
+
+/* Iphone */
+@media(max-width: 375px){
+    .about{
+        height: 698px;
     }
 
-.about > img{
-    /* margin-top: 8rem; */
-}
-}
+    .about__info{
+        padding: 1rem;
+    }
+
+    .about > img{
+        height: 200px;
+        width: 200px;
+    }
+  }

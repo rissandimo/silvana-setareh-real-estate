@@ -28,5 +28,12 @@
 @media(max-width: 375px){
     .header{
         flex-direction: column;
+        height: 200px;
     }
+
+.header > .header__links{
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-around;
+}
 }
