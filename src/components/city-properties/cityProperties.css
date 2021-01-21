@@ -9,3 +9,11 @@
     grid-template-columns: repeat(3, 1fr);
     padding: 1rem;
 }
+
+/* Ipad */
+@media(max-width: 768px){
+    .property__listings{
+        grid-template-columns: 1fr;
+    }
+    
+}
