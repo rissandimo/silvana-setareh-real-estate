@@ -40,6 +40,10 @@
 /* Ipad */
 @media(max-width: 768px){
 
+    .footer{
+        height: 290px;
+    }
+
     .footer > .footer__address{
         grid-gap: 1rem;
         grid-template-columns: repeat(2, 1fr);
