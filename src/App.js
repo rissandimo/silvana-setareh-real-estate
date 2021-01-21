@@ -30,7 +30,7 @@ function App() {
       <Route path='/sold' component={Sold} />
     </Switch>
     
-    <Footer />
+    {/* <Footer /> */}
     </div>
   );
 }

@@ -41,3 +41,17 @@
     color:#1A1A1A;
     background-color: white;
 }
+
+/* Iphone */
+@media(max-width: 375px){
+
+    .contact__details{
+        height: 500px;
+    }
+    .contact__details > .social{
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+}
