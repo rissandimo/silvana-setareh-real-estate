@@ -27,3 +27,7 @@ body{
   padding: 7px 7px;
   text-transform: uppercase;
 }
+
+.app{
+  position: relative;
+}

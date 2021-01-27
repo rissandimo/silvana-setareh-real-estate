@@ -15,7 +15,10 @@ const ContactForm = () => {
         e.preventDefault();
 
         emailjs.sendForm(service_id, templateId, e.target, userId)
-        .then(result => console.log(result.text))
+        .then(result => {
+            console.log(result.text);
+            document.querySelector('.contact__form')['form'].reset();
+        })
         .catch(error => console.log(error.text));
 
     }
@@ -23,7 +26,7 @@ const ContactForm = () => {
     return (
         <div className="contact__form">
             <div className="form-wrap">
-                <form onSubmit={sendEmail}> 
+                <form className='form' onSubmit={sendEmail}> 
                 <div className="form-group">
                     <input type="text" name="from_name" id="fullName" placeholder="Name" />
                 </div>

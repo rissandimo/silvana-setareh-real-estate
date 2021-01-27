@@ -1,7 +1,11 @@
 .footer{
+    bottom: 0;
+    border-top: 1px dotted;
     background-color: #1A1A1A;
     color: white;
-    height: 450px;
+    height: 150px;
+    position: absolute;
+    width: 100%;
 }
 
 .footer > h1{
@@ -11,8 +15,10 @@
 }
 
 .footer > .footer__address{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
 }
 
 .footer > .footer__address > .footer__section{
@@ -63,4 +69,5 @@
         grid-template-columns: 1fr;
         padding: 0.5rem;
     }
+
 }

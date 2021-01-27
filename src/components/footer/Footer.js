@@ -20,7 +20,7 @@ const Footer = () => {
                 <span>SORAYA SETAREH</span>
                 <span>9197 Wilshire Blvd. Suite 321 <br/>
                     Bevely Hills, CA 90210</span> 
-                <span>DRE# 123456</span>
+                <span>DRE# 2134567</span>
             </div>
         </div>
 
