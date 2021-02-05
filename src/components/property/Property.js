@@ -1,6 +1,8 @@
 import React from 'react';
 import './property.css';
 
+import CurrencyFormat from 'react-currency-format';
+
 const Property = ({ property }) => {
 
     const { address, price, bedrooms, bathrooms, image, sqft, type, mls } = property;
@@ -9,7 +11,7 @@ const Property = ({ property }) => {
 
             <img src={image} className="img" alt=""/>
             <h3 className="address">{ address }</h3> 
-            <h4 className="price">${price}</h4>
+            <h4 className="price"><CurrencyFormat value={price} displayType={'text'} prefix={'$'} thousandSeparator={true} /></h4>
 
         <div className="property__description">
             <div className="row">
